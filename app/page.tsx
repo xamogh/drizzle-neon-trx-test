@@ -4,6 +4,7 @@ import { Suspense } from 'react'
 import Table from '@/components/table'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
+import CreateProfilesButton from '@/components/create-profiles-button'
 
 export const dynamic = 'force-dynamic'
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Suspense fallback={<TablePlaceholder />}>
         <Table />
       </Suspense>
+      <CreateProfilesButton />
       <p className="font-light text-gray-600 w-full max-w-lg text-center mt-6">
         Postgres demo with{' '}
         <Link
