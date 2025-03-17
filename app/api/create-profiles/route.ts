@@ -1,6 +1,8 @@
 import { db, UsersTable } from '@/lib/drizzle';
 import { NextResponse } from 'next/server';
 
+console.log("main")
+
 // Function to generate random names
 function generateRandomName() {
   const firstNames = [
